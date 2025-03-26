@@ -1,0 +1,62 @@
+table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse; /* Collapsing borders */
+}
+
+table th,
+table td {
+  padding: 12px 15px; /* Padding for table cells */
+  text-align: left;
+  border: 1px solid #ddd; /* Light border between cells */
+}
+
+table th {
+  background-color: #f4f4f4; /* Light background for headers */
+  font-weight: bold;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center content */
+  }
+
+  table {
+    width: 100%; /* Table takes full width on smaller screens */
+  }
+}
+.dueDate-column div {
+  display: flex;
+}
+
+.dueDate-column span {
+  margin-right: 6px;
+}
+
+.arrow {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.up-arrow {
+  margin-left: auto;
+}
+
+.up-arrow:active {
+  transform: translateY(-2px);
+}
+
+.down-arrow {
+  margin-left: 6px;
+}
+
+.down-arrow:active {
+  transform: translateY(2px);
+}
