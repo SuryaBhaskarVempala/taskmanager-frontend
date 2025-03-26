@@ -19,7 +19,7 @@ const PrivateRoute = ({ children }) => {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const response = await axios.post('http://localhost:3000/auth/', { token });
+          const response = await axios.post('https://taskmanager-backend-l2fv.onrender.com/auth/', { token });
           setUser(response.data.user);
           setIsValidToken(response.data.valid);
         } catch (err) {
