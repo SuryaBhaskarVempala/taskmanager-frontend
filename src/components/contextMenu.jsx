@@ -20,7 +20,7 @@ export default function ContextMenu({setRowId,position,setPosition,rowId,setSubm
       <div
         onClick={async() => {
             try{
-            await axios.delete('http://localhost:3000/deleteTask/'+rowId);
+            await axios.delete('https://taskmanager-backend-l2fv.onrender.com/deleteTask/'+rowId);
             }
             catch(err){
               alert("Server Error Please Try After Some Time")

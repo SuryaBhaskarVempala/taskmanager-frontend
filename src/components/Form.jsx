@@ -70,7 +70,7 @@ export default function Form() {
 
     if (rowId) {
       try {
-        await axios.put(`http://localhost:3000/updateTask/${rowId}`, {
+        await axios.put(`https://taskmanager-backend-l2fv.onrender.com/updateTask/${rowId}`, {
           ...formData,
           dueDate: new Date(formData.dueDate),
         });
@@ -94,7 +94,7 @@ export default function Form() {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/createTask', formData, {
+      const response = await axios.post('https://taskmanager-backend-l2fv.onrender.com/createTask', formData, {
         headers: {
           'Content-Type': 'application/json',
         },

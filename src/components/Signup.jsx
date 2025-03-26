@@ -33,7 +33,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:3000/signup/',
+        'https://taskmanager-backend-l2fv.onrender.com/signup/',
         signupData,
         {
           headers: {
